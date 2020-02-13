@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from './Components/Layout';
+import Layout from './components/Layout';
 import './App.css';
 
-const App = () => {
+const App = (): JSX.Element => {
     return (
         <Layout>
             <div>Hello World!</div>

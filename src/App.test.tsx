@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
+import Layout from './components/Layout';
 
-test('renders learn react link', () => {
-    const { getByText } = render(<App />);
-    const linkElement = getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+test('should contain one <Layout /> component', () => {
+    const wrapper = shallow(<App />);
+
+    expect(wrapper.find(Layout)).toHaveLength(1);
 });

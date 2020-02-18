@@ -5,7 +5,7 @@ import './App.css';
 const App = (): JSX.Element => {
     return (
         <Layout>
-            <div>Hello World!</div>
+            <div>Hello World</div>
         </Layout>
     );
 };
